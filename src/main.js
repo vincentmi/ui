@@ -6,6 +6,13 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueProgressBar from 'vue-progressbar'
+import Raven from 'raven-js'
+import RavenVue from 'raven-js/plugins/vue'
+
+Raven
+  .config('http://21e8d546983840b99622cbaa4c96ead7@qasentry.mxj.mx/2')
+  .addPlugin(RavenVue, Vue)
+  .install()
 
 Vue.config.productionTip = false
 

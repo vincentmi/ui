@@ -38,7 +38,10 @@
       },
       clickname: function (event) {
         alert(event.name)
+
         console.log(event)
+
+        throw new Error('VUE Error', 'Error for vue')
       }
     },
     created () {
