@@ -1,14 +1,14 @@
-# test
+# notiui 消息中心控制台
 
 > A Vue.js project
 
-## Build Setup
+## 使用步骤
 
 ``` bash
-# install dependencies
+# 安装依赖
 npm install
 
-# serve with hot reload at localhost:8080
+# 在localhost:8080 启动node的server服务器，自动监控文件修改更新
 npm run dev
 
 # build for production with minification
