@@ -9,8 +9,7 @@
               mode="horizontal" @select=""
               backgroundColor="#000"
               textColor="#eee"
-              activeTextColor="#999"
-
+              activeTextColor="#AAA"
             >
               <el-menu-item index="-1">
                 <div class="logobox">

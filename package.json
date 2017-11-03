@@ -1,7 +1,7 @@
 {
-  "name": "ele",
+  "name": "notiui",
   "version": "1.0.0",
-  "description": "A Vue.js project",
+  "description": "notification panel",
   "author": "miwenshu <mi.wenshu@mydreamplus.com>",
   "private": true,
   "scripts": {
@@ -15,7 +15,9 @@
   },
   "dependencies": {
     "element-ui": "^2.0.2",
+    "raven-js": "^3.19.1",
     "vue": "^2.5.2",
+    "vue-progressbar": "^0.7.3",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
