@@ -8,6 +8,9 @@ import router from './router'
 import VueProgressBar from 'vue-progressbar'
 import Raven from 'raven-js'
 import RavenVue from 'raven-js/plugins/vue'
+import './config/setting'
+import Vuex from 'vuex'
+import store from './store/index.js'
 
 Raven
   .config('http://21e8d546983840b99622cbaa4c96ead7@qasentry.mxj.mx/2')
@@ -15,6 +18,8 @@ Raven
   .install()
 
 Vue.config.productionTip = false
+
+Vue.use(Vuex)
 
 Vue.use(ElementUI, { size: 'large' })
 
@@ -28,6 +33,7 @@ Vue.use(VueProgressBar, {
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
   components: { App }
 })

@@ -20,8 +20,8 @@
       var uid = this.$route.params.id
       return {
         name: 'Elon Musk',
-        uid: uid,
-        description: 'CEO of SpaceX'
+        uid: this.$store.state.uid,
+        description: 'CEO of SpaceX' + uid
       }
     },
     methods: {

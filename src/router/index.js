@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
+import Layout from '@/components/Layout'
 import User from '@/components/User'
 import UserDesc from '@/components/UserDesc'
 import UserPost from '@/components/UserPost'
+import Login from '@/components/Login'
+import NoticeList from '@/components/NoticeList'
 
 Vue.use(Router)
 
@@ -11,8 +13,23 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: HelloWorld
+      name: 'Layout',
+      component: Layout,
+      children: [
+        {
+          name: 'NoticeList',
+          path: 'notice-list',
+          component: NoticeList
+        }
+
+      ]
+    },
+
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
+
     },
 
     {
