@@ -1,5 +1,5 @@
 export default {
   uid: 0,
-  uname: '',
-  token: ''
+  uname: 'NoOne',
+  token: null
 }

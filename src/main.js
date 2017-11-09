@@ -11,6 +11,9 @@ import RavenVue from 'raven-js/plugins/vue'
 import './config/setting'
 import Vuex from 'vuex'
 import store from './store/index.js'
+import VChart from './components/VChart.vue'
+
+Vue.component('v-chart', VChart)
 
 Raven
   .config('http://21e8d546983840b99622cbaa4c96ead7@qasentry.mxj.mx/2')
@@ -24,7 +27,7 @@ Vue.use(Vuex)
 Vue.use(ElementUI, { size: 'large' })
 
 Vue.use(VueProgressBar, {
-  color: 'rgb(143, 255, 199)',
+  color: 'rgb(0, 153, 0)',
   failedColor: 'red',
   height: '2px'
 })

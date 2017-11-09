@@ -5,5 +5,8 @@ export default {
   },
   token: function (state) {
     return state.token
+  },
+  uname: function (state) {
+    return state.uname
   }
 }

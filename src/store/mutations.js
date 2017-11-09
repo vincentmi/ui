@@ -1,8 +1,8 @@
 export default {
 
-  update: function (state, userinfo) {
+  updateUserInfo: function (state, userinfo) {
     state.uid = userinfo.uid
-    state.name = userinfo.name
+    state.uname = userinfo.uname
     state.token = userinfo.token
   }
 
