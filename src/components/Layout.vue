@@ -2,12 +2,12 @@
   <el-container>
     <el-header height="60" id="mm">
       <el-row >
-        <el-col :span="4">
+        <el-col :span="5">
           <div class="logobox">
             <img style="height:48px;" src='/static/logo1.png'/>
           </div>
         </el-col>
-          <el-col :span="16">
+          <el-col :span="15">
             <el-menu
               :default-active="topActiveIndex"
               class="topmenu"
