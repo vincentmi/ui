@@ -16,7 +16,7 @@
   "dependencies": {
     "axios": "^0.17.0",
     "element-ui": "^2.0.2",
-    "highcharts": "^6.0.2",
+    "highcharts": "^8.2.0",
     "raven-js": "^3.19.1",
     "vue": "^2.5.2",
     "vue-progressbar": "^0.7.3",
